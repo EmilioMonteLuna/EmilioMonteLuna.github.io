@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emilio Montelongo Luna - My Portfolio</title>
+    <title>Emilio Montelongo Luna - Data Science & Computer Science Portfolio</title>
+    <meta name="description" content="Portfolio of Emilio Montelongo Luna, Data Science & Computer Science student at the University of Saskatchewan specializing in data analysis and visualization.">
+    <meta name="keywords" content="data science, computer science, portfolio, visualization, Tableau, Python, SQL">
+    <meta name="author" content="Emilio Montelongo Luna">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <!-- Optional: Add a Google font for a modern look -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph Tags for social sharing -->
+    <meta property="og:title" content="Emilio Montelongo Luna - Data Science Portfolio">
+    <meta property="og:description" content="Data Science & Computer Science student specializing in data analysis and visualization.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://emiliomonteluna.github.io/">
+    <meta property="og:type" content="website">
 </head>
 <body>
+    <!-- Mobile Navigation Toggle -->
+    <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+    </button>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="container">
             <div class="nav-brand">Emilio Montelongo Luna</div>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-menu">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://public.tableau.com/app/profile/emilio.montelongo.luna/vizzes" class="nav-link" target="_blank">Tableau Profile</a>
+                <a href="https://public.tableau.com/app/profile/emilio.montelongo.luna/vizzes" class="nav-link" target="_blank" rel="noopener">Tableau Profile</a>
             </div>
         </div>
     </nav>
 
     <!-- Header Section -->
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <img src="images/profile.jpg" alt="Profile photo" class="profile-pic" style="width:120px;border-radius:50%;margin-bottom:15px;">
                 <h1 class="hero-title">Emilio Montelongo Luna</h1>
                 <h2 class="hero-subtitle">Data Science & Computer Science Student</h2>
                 <p class="hero-description">University of Saskatchewan</p>
@@ -63,76 +85,100 @@
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
+                <!-- Each skill icon now has improved accessibility with aria-label -->
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=python&theme=light" alt="Python" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=python&theme=light" alt="Python" class="skill-icon" loading="lazy" aria-label="Python programming language">
                     <span class="skill-name">Python</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" class="skill-icon" loading="lazy" aria-label="Java programming language">
                     <span class="skill-name">Java</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=postgresql&theme=light" alt="PostgreSQL" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=postgresql&theme=light" alt="PostgreSQL" class="skill-icon" loading="lazy" aria-label="PostgreSQL database">
                     <span class="skill-name">PostgreSQL</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=git&theme=light" alt="Git" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=git&theme=light" alt="Git" class="skill-icon" loading="lazy" aria-label="Git version control">
                     <span class="skill-name">Git</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code" class="skill-icon" loading="lazy" aria-label="Visual Studio Code">
                     <span class="skill-name">VS Code</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=docker&theme=light" alt="Docker" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=docker&theme=light" alt="Docker" class="skill-icon" loading="lazy" aria-label="Docker containerization">
                     <span class="skill-name">Docker</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=aws&theme=light" alt="AWS" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=aws&theme=light" alt="AWS" class="skill-icon" loading="lazy" aria-label="Amazon Web Services">
                     <span class="skill-name">AWS</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=pytorch&theme=light" alt="PyTorch" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=pytorch&theme=light" alt="PyTorch" class="skill-icon" loading="lazy" aria-label="PyTorch machine learning">
                     <span class="skill-name">PyTorch</span>
                 </div>
                 <div class="skill-item">
-                    <img src="https://skillicons.dev/icons?i=mongodb&theme=light" alt="MongoDB" class="skill-icon">
+                    <img src="https://skillicons.dev/icons?i=mongodb&theme=light" alt="MongoDB" class="skill-icon" loading="lazy" aria-label="MongoDB database">
                     <span class="skill-name">MongoDB</span>
                 </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
                          alt="Excel"
                          class="skill-icon"
-                         style="background:#217346; padding:8px; border-radius:8px;">
+                         style="background:#217346; padding:8px; border-radius:8px;"
+                         loading="lazy" aria-label="Microsoft Excel">
                     <span class="skill-name">Excel</span>
                 </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg"
                          alt="Power BI"
                          class="skill-icon"
-                         style="background:#F2C811; padding:8px; border-radius:8px;">
+                         style="background:#F2C811; padding:8px; border-radius:8px;"
+                         loading="lazy" aria-label="Power BI">
                     <span class="skill-name">Power BI</span>
                 </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tableau.svg"
                          alt="Tableau"
                          class="skill-icon"
-                         style="background:#E97627; padding:8px; border-radius:8px;">
+                         style="background:#E97627; padding:8px; border-radius:8px;"
+                         loading="lazy" aria-label="Tableau">
                     <span class="skill-name">Tableau</span>
+                </div>
+                
+                <!-- New C Programming Language Skill -->
+                <div class="skill-item">
+                    <img src="https://skillicons.dev/icons?i=c&theme=light" alt="C" class="skill-icon" loading="lazy" aria-label="C programming language">
+                    <span class="skill-name">C</span>
+                </div>
+                
+                <!-- New Linux Skill -->
+                <div class="skill-item">
+                    <img src="https://skillicons.dev/icons?i=linux&theme=light" alt="Linux" class="skill-icon" loading="lazy" aria-label="Linux operating system">
+                    <span class="skill-name">Linux</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with categorization -->
     <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Project category filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="visualization">Visualization</button>
+            </div>
+            
             <div class="projects-grid">
-
-                <!-- GlobalRetail Data Engineering -->
-                <div class="project-card highlight">
-                    <img src="images/retail.jpg" alt="GlobalRetail Data Engineering" class="project-image">
+                <!-- Projects with category attributes for filtering -->
+                <div class="project-card highlight" data-category="data-engineering">
+                    <img src="images/retail.png" alt="GlobalRetail Data Engineering" class="project-image" loading="lazy">
                     <h3 class="project-title">End-to-End Data Engineering – GlobalRetail</h3>
                     <div class="project-tags">
                         <span class="tag">Databricks</span>
@@ -147,8 +193,8 @@
                 </div>
 
                 <!-- PopIn Event Networking AI Project -->
-                <div class="project-card">
-                    <img src="images/networking.jpg" alt="PopIn Event Networking AI" class="project-image">
+                <div class="project-card" data-category="machine-learning">
+                    <img src="images/networking.jpg" alt="PopIn Event Networking AI" class="project-image" loading="lazy">
                     <h3 class="project-title">PopIn Event Networking AI</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
@@ -162,8 +208,8 @@
                 </div>
 
                 <!-- Food Marketing Analytics -->
-                <div class="project-card">
-                    <img src="images/foodmarketing.jpg" alt="Food Marketing Analytics" class="project-image">
+                <div class="project-card" data-category="data-analysis">
+                    <img src="images/foodmarketing.jpg" alt="Food Marketing Analytics" class="project-image" loading="lazy">
                     <h3 class="project-title">Food Marketing Analytics</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
@@ -176,8 +222,8 @@
                 </div>
 
                 <!-- Traffic Analysis with PyTorch -->
-                <div class="project-card">
-                    <img src="images/traffic.jpg" alt="Traffic Analysis with PyTorch" class="project-image">
+                <div class="project-card" data-category="machine-learning">
+                    <img src="images/traffic.jpg" alt="Traffic Analysis with PyTorch" class="project-image" loading="lazy">
                     <h3 class="project-title">Traffic Analysis with PyTorch</h3>
                     <div class="project-tags">
                         <span class="tag">PyTorch</span>
@@ -190,8 +236,8 @@
                 </div>
 
                 <!-- Fuel Economy Linear Regression -->
-                <div class="project-card">
-                    <img src="images/fueleconomy.jpg" alt="Fuel Economy Linear Regression" class="project-image">
+                <div class="project-card" data-category="machine-learning">
+                    <img src="images/fueleconomy.jpg" alt="Fuel Economy Linear Regression" class="project-image" loading="lazy">
                     <h3 class="project-title">Fuel Economy Linear Regression</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
@@ -204,8 +250,8 @@
                 </div>
 
                 <!-- Existing Portfolio Projects (summarized for brevity) -->
-                <div class="project-card">
-                    <img src="images/Covid19-virus-4931041-green2-972x625.jpg" alt="Covid 19 Data exploration in SQL" class="project-image">
+                <div class="project-card" data-category="data-analysis">
+                    <img src="images/Covid19-virus-4931041-green2-972x625.jpg" alt="Covid 19 Data exploration in SQL" class="project-image" loading="lazy">
                     <h3 class="project-title">Covid 19 Data Exploration in SQL</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
@@ -214,8 +260,8 @@
                     <p class="project-description">Exploratory data analysis of COVID-19 trends and patterns using SQL and Python.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/Screenshot 2025-03-11 233853.png" alt="Tableau Dashboard for visualizing COVID 19 data." class="project-image">
+                <div class="project-card" data-category="visualization">
+                    <img src="images/Screenshot 2025-03-11 233853.png" alt="Tableau Dashboard for visualizing COVID 19 data." class="project-image" loading="lazy">
                     <h3 class="project-title">Tableau COVID-19 Dashboard</h3>
                     <div class="project-tags">
                         <span class="tag">Tableau</span>
@@ -223,8 +269,8 @@
                     <p class="project-description">Interactive dashboard visualizing COVID-19 data for actionable insights.</p>
                     <a href="https://public.tableau.com/app/profile/emilio.montelongo.luna/viz/CovidDashboard_17412234544120/Dashboard1" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/wp1945898-movie-posters-wallpapers.jpg" alt="Movie Correlation Study" class="project-image">
+                <div class="project-card" data-category="data-analysis">
+                    <img src="images/wp1945898-movie-posters-wallpapers.jpg" alt="Movie Correlation Study" class="project-image" loading="lazy">
                     <h3 class="project-title">Movie Correlation Study</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
@@ -233,8 +279,8 @@
                     <p class="project-description">Statistical analysis of movie ratings and box office performance correlation.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/Screenshot 2025-03-12 004447.png" alt="Coffee Sales Dashboard" class="project-image">
+                <div class="project-card" data-category="data-visualization">
+                    <img src="images/Screenshot 2025-03-12 004447.png" alt="Coffee Sales Dashboard" class="project-image" loading="lazy">
                     <h3 class="project-title">Coffee Sales Dashboard</h3>
                     <div class="project-tags">
                         <span class="tag">Excel</span>
@@ -243,8 +289,8 @@
                     <p class="project-description">Business performance tracking and sales analytics with KPI monitoring.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects/tree/main/coffeeproject" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/pexels-jessica-bryant-592135-1370704.jpg" alt="Data Cleaning in SQL" class="project-image">
+                <div class="project-card" data-category="data-cleaning">
+                    <img src="images/pexels-jessica-bryant-592135-1370704.jpg" alt="Data Cleaning in SQL" class="project-image" loading="lazy">
                     <h3 class="project-title">Data Cleaning in SQL</h3>
                     <div class="project-tags">
                         <span class="tag">SQL</span>
@@ -253,8 +299,8 @@
                     <p class="project-description">Transformed raw housing data in SQL Server for analytics readiness.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/high-angle-credit-card-with-hook-phishing.jpg" alt="Credit Card Fraud Detection" class="project-image">
+                <div class="project-card" data-category="machine-learning">
+                    <img src="images/high-angle-credit-card-with-hook-phishing.jpg" alt="Credit Card Fraud Detection" class="project-image" loading="lazy">
                     <h3 class="project-title">Credit Card Fraud Detection</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
@@ -263,8 +309,8 @@
                     <p class="project-description">Built and evaluated ML models for fraud detection on imbalanced data.</p>
                     <a href="https://github.com/EmilioMonteLuna/Credit_Card_Fraud_Detection_Analysis" class="project-link">View Project →</a>
                 </div>
-                <div class="project-card">
-                    <img src="images/shutter-speed-BQ9usyzHx_w-unsplash.jpg" alt="Ecommerce Analysis Dashboard" class="project-image">
+                <div class="project-card" data-category="visualization">
+                    <img src="images/shutter-speed-BQ9usyzHx_w-unsplash.jpg" alt="Ecommerce Analysis Dashboard" class="project-image" loading="lazy">
                     <h3 class="project-title">Ecommerce Analysis Dashboard</h3>
                     <div class="project-tags">
                         <span class="tag">Tableau</span>
@@ -277,12 +323,30 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with form -->
     <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
                 <p class="contact-description">I'm always interested in discussing new opportunities, collaborations, or just connecting with fellow data enthusiasts.</p>
+                
+                <!-- Contact form -->
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+                
                 <div class="contact-links">
                     <a href="mailto:emiliomonteluna@gmail.com" class="contact-link" target="_blank">
                         <span class="contact-icon">✉</span>
@@ -301,13 +365,32 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Theme switch button with moon icon by default (for switching to dark mode) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-toggle-icon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- Back to top button -->
+    <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </a>
+
+    <!-- Footer with additional links -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Emilio Monteluna. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2025 Emilio Monteluna. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" id="privacy-policy">Privacy Policy</a>
+                    <a href="sitemap.xml">Sitemap</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="app.js"></script>
 </body>
 </html>
