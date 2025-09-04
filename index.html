@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilio Montelongo Luna - My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add a Google font for a modern look -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -25,10 +27,11 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
+                <img src="images/profile.jpg" alt="Profile photo" class="profile-pic" style="width:120px;border-radius:50%;margin-bottom:15px;">
                 <h1 class="hero-title">Emilio Montelongo Luna</h1>
                 <h2 class="hero-subtitle">Data Science & Computer Science Student</h2>
                 <p class="hero-description">University of Saskatchewan</p>
-                <p class="hero-tagline">Passionate about transforming data into meaningful insights through analytics and visualization</p>
+                <p class="hero-tagline">Transforming data into meaningful insights through analytics and visualization</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn--primary">View Projects</a>
                     <a href="#contact" class="btn btn--outline">Get In Touch</a>
@@ -42,9 +45,15 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <p>I'm a dedicated Data Science and Computer Science student at the University of Saskatchewan, passionate about leveraging data to solve complex problems and drive informed decision-making.</p>
-                <p>My expertise spans data analysis, statistical modeling, and data visualization, with hands-on experience in Python, database management, and business intelligence tools. I'm particularly interested in exploring patterns in large datasets and creating compelling visual narratives from complex information.</p>
-                <p>Currently seeking internship opportunities and collaborative projects where I can apply my analytical skills while continuing to learn from industry professionals and contribute to meaningful data-driven solutions.</p>
+                <p>
+                    I’m a dedicated Data Science and Computer Science student at the University of Saskatchewan, passionate about leveraging data to solve complex problems and drive informed decision-making.
+                </p>
+                <p>
+                    My expertise spans data analysis, statistical modeling, and data visualization, with hands-on experience in Python, database management, and business intelligence tools. I’m particularly interested in exploring patterns in large datasets and creating compelling visual narratives from complex information.
+                </p>
+                <p>
+                    Currently seeking internship opportunities and collaborative projects where I can apply my analytical skills, continue to learn from industry professionals, and contribute to meaningful data-driven solutions.
+                </p>
             </div>
         </div>
     </section>
@@ -92,7 +101,7 @@
                 </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg"
-                         alt="Microsoft Excel logo in green with white X, representing spreadsheet and data analysis skills"
+                         alt="Excel"
                          class="skill-icon"
                          style="background:#217346; padding:8px; border-radius:8px;">
                     <span class="skill-name">Excel</span>
@@ -114,110 +123,156 @@
             </div>
         </div>
     </section>
-    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/Covid19-virus-4931041-green2-972x625.jpg" alt="Covid 19 Data exploration in SQL" class="project-image">
-                    <h3 class="project-title">Covid 19 Data exploration in SQL</h3>
+
+                <!-- GlobalRetail Data Engineering -->
+                <div class="project-card highlight">
+                    <img src="images/retail.jpg" alt="GlobalRetail Data Engineering" class="project-image">
+                    <h3 class="project-title">End-to-End Data Engineering – GlobalRetail</h3>
                     <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Databricks</span>
+                        <span class="tag">Delta Lake</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Power BI</span>
                     </div>
-                    <p class="project-description">Exploratory data analysis of COVID-19 trends and patterns using statistical methods.</p>
-                    <a href="https://github.com/EmilioMonteLuna/PortfolioProjects" class="project-link">View Project →</a>
+                    <p class="project-description">
+                        Case study: Built a scalable data lakehouse pipeline using Databricks and Delta Lake on AWS for a simulated multinational retailer. Automated ETL, ensured data quality, and delivered analytics dashboards with Power BI.
+                    </p>
+                    <a href="https://github.com/EmilioMonteLuna/End-to-End-DE-Global_Retail" class="project-link">View Project →</a>
                 </div>
 
+                <!-- PopIn Event Networking AI Project -->
                 <div class="project-card">
-                    <img src="images/Screenshot 2025-03-11 233853.png" alt="Tableau Dashboard for visualizing COVID 19 data." class="project-image">
-                    <h3 class="project-title">Tableau Dashboard for visualizing COVID 19 data.</h3>
+                    <img src="images/networking.jpg" alt="PopIn Event Networking AI" class="project-image">
+                    <h3 class="project-title">PopIn Event Networking AI</h3>
                     <div class="project-tags">
-                        <span class="tag">Tableau</span>
-                        
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Machine Learning</span>
                     </div>
-                    <p class="project-description">Exploratory data analysis of COVID-19 trends and patterns using statistical methods.</p>
-                    <a href="https://public.tableau.com/app/profile/emilio.montelongo.luna/viz/CovidDashboard_17412234544120/Dashboard1" class="project-link">View Project →</a>
+                    <p class="project-description">
+                        AI-powered event networking recommendation engine utilizing NLP techniques to connect like-minded attendees at large events.
+                    </p>
+                    <a href="https://github.com/EmilioMonteLuna/PopInEventNetworkingAIProj" class="project-link">View Project →</a>
                 </div>
-                
+
+                <!-- Food Marketing Analytics -->
                 <div class="project-card">
                     <img src="images/foodmarketing.jpg" alt="Food Marketing Analytics" class="project-image">
                     <h3 class="project-title">Food Marketing Analytics</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Data Analysis</span>
                     </div>
-                    <p class="project-description">Food Marketing Case Study using Python to explore Marketing Challenges.</p>
+                    <p class="project-description">
+                        Data-driven case study examining marketing challenges in the food industry using advanced analytics and visualization in Python.
+                    </p>
                     <a href="https://github.com/EmilioMonteLuna/FoodMarketing_DA_Project" class="project-link">View Project →</a>
                 </div>
-                
-                <div class="project-card">
-                    <img src="images/wp1945898-movie-posters-wallpapers.jpg" alt="Coffee Sales Dashbaord" class="project-image">
-                    <h3 class="project-title">Movie Correlation Study</h3>
 
+                <!-- Traffic Analysis with PyTorch -->
+                <div class="project-card">
+                    <img src="images/traffic.jpg" alt="Traffic Analysis with PyTorch" class="project-image">
+                    <h3 class="project-title">Traffic Analysis with PyTorch</h3>
+                    <div class="project-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <p class="project-description">
+                        Developed a deep learning model to analyze and predict traffic patterns using real-world datasets and PyTorch.
+                    </p>
+                    <a href="https://github.com/EmilioMonteLuna/Traffic_Pytorch" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Fuel Economy Linear Regression -->
+                <div class="project-card">
+                    <img src="images/fueleconomy.jpg" alt="Fuel Economy Linear Regression" class="project-image">
+                    <h3 class="project-title">Fuel Economy Linear Regression</h3>
                     <div class="project-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">Statistical Analysis</span>
+                        <span class="tag">Regression</span>
+                    </div>
+                    <p class="project-description">
+                        Built a machine learning model to predict vehicle fuel efficiency based on technical specifications using regression techniques.
+                    </p>
+                    <a href="https://github.com/EmilioMonteLuna/Fuel_Economy_LinRegression" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Existing Portfolio Projects (summarized for brevity) -->
+                <div class="project-card">
+                    <img src="images/Covid19-virus-4931041-green2-972x625.jpg" alt="Covid 19 Data exploration in SQL" class="project-image">
+                    <h3 class="project-title">Covid 19 Data Exploration in SQL</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <p class="project-description">Exploratory data analysis of COVID-19 trends and patterns using SQL and Python.</p>
+                    <a href="https://github.com/EmilioMonteLuna/PortfolioProjects" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/Screenshot 2025-03-11 233853.png" alt="Tableau Dashboard for visualizing COVID 19 data." class="project-image">
+                    <h3 class="project-title">Tableau COVID-19 Dashboard</h3>
+                    <div class="project-tags">
+                        <span class="tag">Tableau</span>
+                    </div>
+                    <p class="project-description">Interactive dashboard visualizing COVID-19 data for actionable insights.</p>
+                    <a href="https://public.tableau.com/app/profile/emilio.montelongo.luna/viz/CovidDashboard_17412234544120/Dashboard1" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/wp1945898-movie-posters-wallpapers.jpg" alt="Movie Correlation Study" class="project-image">
+                    <h3 class="project-title">Movie Correlation Study</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Statistics</span>
                     </div>
                     <p class="project-description">Statistical analysis of movie ratings and box office performance correlation.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="project-link">View Project →</a>
                 </div>
-                
                 <div class="project-card">
-                    <img src="images/Screenshot 2025-03-12 004447.png" alt="Coffee Sales Dashbaord" class="project-image">
+                    <img src="images/Screenshot 2025-03-12 004447.png" alt="Coffee Sales Dashboard" class="project-image">
                     <h3 class="project-title">Coffee Sales Dashboard</h3>
-                    
                     <div class="project-tags">
                         <span class="tag">Excel</span>
-                        <span class="tag">Visualisations</span>
+                        <span class="tag">Visualization</span>
                     </div>
                     <p class="project-description">Business performance tracking and sales analytics with KPI monitoring.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects/tree/main/coffeeproject" class="project-link">View Project →</a>
                 </div>
-                
                 <div class="project-card">
                     <img src="images/pexels-jessica-bryant-592135-1370704.jpg" alt="Data Cleaning in SQL" class="project-image">
                     <h3 class="project-title">Data Cleaning in SQL</h3>
-
                     <div class="project-tags">
-                        <span class="tag">Data cleaning</span>
-                        <span class="tag">Data exploration</span>
                         <span class="tag">SQL</span>
+                        <span class="tag">Data Cleaning</span>
                     </div>
-                    <p class="project-description">In this project I take raw housing data and transform it in SQL Server to make it more usable for analysis.</p>
+                    <p class="project-description">Transformed raw housing data in SQL Server for analytics readiness.</p>
                     <a href="https://github.com/EmilioMonteLuna/PortfolioProjects/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql" class="project-link">View Project →</a>
-                   
-                    
                 </div>
-                
                 <div class="project-card">
                     <img src="images/high-angle-credit-card-with-hook-phishing.jpg" alt="Credit Card Fraud Detection" class="project-image">
                     <h3 class="project-title">Credit Card Fraud Detection</h3>
-
                     <div class="project-tags">
-                        <span class="tag">Jupyter</span>
                         <span class="tag">Python</span>
                         <span class="tag">Machine Learning</span>
                     </div>
-                    <p class="project-description"> This project leverages a real-world, highly imbalanced dataset to build and evaluate machine learning models for the detection of fraudulent transactions.</p>
+                    <p class="project-description">Built and evaluated ML models for fraud detection on imbalanced data.</p>
                     <a href="https://github.com/EmilioMonteLuna/Credit_Card_Fraud_Detection_Analysis" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
                     <img src="images/shutter-speed-BQ9usyzHx_w-unsplash.jpg" alt="Ecommerce Analysis Dashboard" class="project-image">
                     <h3 class="project-title">Ecommerce Analysis Dashboard</h3>
-
                     <div class="project-tags">
-                        
-                        <span class="tag">Visualisations</span>
                         <span class="tag">Tableau</span>
                     </div>
-                    <p class="project-description"> Analyzed sales, shipping, and product data for a pet supply retailer using Tableau. Delivered actionable insights on top products, shipping optimization, and fulfillment strategy through an interactive executive dashboard.</p>
+                    <p class="project-description">Analyzed sales, shipping, and fulfillment data for a pet retailer with Tableau.</p>
                     <a href="https://github.com/EmilioMonteLuna/Projects/tree/main/Tableau/Ecommerce-Analysis" class="project-link">View Project →</a>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -229,7 +284,7 @@
             <div class="contact-content">
                 <p class="contact-description">I'm always interested in discussing new opportunities, collaborations, or just connecting with fellow data enthusiasts.</p>
                 <div class="contact-links">
-                    <a href="emiliomonteluna@gmail.com" class="contact-link" target="_blank">
+                    <a href="mailto:emiliomonteluna@gmail.com" class="contact-link" target="_blank">
                         <span class="contact-icon">✉</span>
                         <span>emiliomonteluna@gmail.com</span>
                     </a>
